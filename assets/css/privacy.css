@@ -1,0 +1,424 @@
+header  /* General Reset */
+body, html, ul, li, a, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header
+{
+    position:fixed;
+    justify-content: space-between;
+    top:0;
+    display:flex;
+    align-items:center;
+    transition:0.6s;
+    padding:40px 100px;
+    z-index:100000;
+}
+
+header.sticky
+{
+    padding:5px 100px;
+    background:#fff;
+}
+
+
+.logo img {
+    height: 90px; /* Adjust the height as necessary */
+    width: auto;
+}
+/* General Styles from earlier remain the same */
+
+/* Navigation Menu */
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header ul li {
+    position: relative;
+    margin: 0 15px;
+    list-style: none;
+}
+
+header ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+header ul a:hover {
+    background-color: rgba(37, 107, 53, 0.5);
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content li {
+    width: 100%;
+}
+
+.dropdown-content a {
+    padding: 12px 20px;
+    color: #333;
+    background-color: #fff;
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Sticky Header when scrolling */
+header.sticky {
+    padding: 5px 275px;
+    background: #ffffff;
+}
+
+header ul a.sticky {
+    color: #333;
+}
+
+
+header ul a:hover {
+    font-style: italic; /* Italicize on hover */
+}
+
+
+header.sticky .logo,
+header.sticky ul li a{
+    color:#000;
+}
+
+
+.auth-buttons a {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.sign-in-btn {
+    background-color: #2b7a3d;
+}
+
+.register-btn {
+    background-color: #256b35;
+}
+
+
+/* Main Menu */
+#mainmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+#mainmenu li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.menu-item:hover {
+    color: #256b35;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+    width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content li {
+    width: 100%;
+}
+
+.dropdown-content a {
+    padding: 12px 20px;
+    display: block;
+    color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.main-content{
+    display: flex;
+    flex-direction: column; 
+    background-color: rgb(170, 215, 170); 
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-top: 200px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+/* Container for the content */
+.main-content {
+    background-color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Title Styling */
+.title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #134313;  /* Dark Green color */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #134313;
+    padding-bottom: 10px;
+}
+
+/* Section Headings */
+.heading-1 h1, .heading-2 h1, .heading-3 h1, .heading-4 h1, .heading-5 h1, .heading-6 h1, .heading-7 h1, .heading-8 h1, .heading-9 h1, .heading-10 h1, .heading-11 h1 {
+    font-weight: bold;
+    color: #134313;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    border-left: 5px solid #134313;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect on headings */
+.heading-1 h1:hover, .heading-2 h1:hover, .heading-3 h1:hover, .heading-4 h1:hover, .heading-5 h1:hover, .heading-6 h1:hover, .heading-7 h1:hover, .heading-8 h1:hover, .heading-9 h1:hover, .heading-10 h1:hover, .heading-11 h1:hover {
+    color: #1a531b;
+    border-left-color: #1a531b;
+}
+
+/* Introduction Styling */
+.introduction, .introduction-2 {
+    margin-bottom: 20px;
+    margin-top: 80px;
+    padding: 10px 15px;
+    background-color: #eef5ee;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* Paragraph Styling in Content */
+.heading-1para p, .heading-2para p, .heading-3para p, .heading-4para p, .heading-5para p, .heading-6para p, .heading-7para p, .heading-8para p, .heading-9para p, .heading-10para p, .heading-11para p {
+    padding-left: 20px;
+    border-left: 3px solid #ddd;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* Style for bullet points */
+p::before {
+    content: "• ";
+    color: #134313;
+    font-weight: bold;
+}
+
+/* Link styling */
+a {
+    color: #134313;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styling */
+button {
+    background-color: #134313;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1a531b;
+}
+
+
+footer {
+    width: 100%;
+    background: linear-gradient(to right, #041400, #066d03d5);
+    color: #fff;
+    padding: 60px 0 30px;
+    font-size: 14px;
+    line-height: 22px;
+    border-top-left-radius: 125px;
+    position: relative;
+}
+
+/* Row Flexbox */
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Columns Styling */
+.col {
+    flex-basis: 22%;
+    padding: 10px;
+    color: #cfd8dc;
+}
+
+/* Logo Section Styling */
+.logo {
+    height: 90px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+/* Text and Heading Styling */
+.col h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #8bc34a;
+}
+
+.col p, .col h4 {
+    font-size: 15px;
+    color: #e0f7fa;
+}
+
+.email-link {
+    color: #8bc34a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.email-link:hover {
+    color: #fff;
+}
+
+/* List Styling */
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #cfd8dc;
+    font-size: 14px;
+}
+
+ul li a:hover {
+    color: #8bc34a;
+}
+
+/* Social Media Images Styling */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.social-img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .col {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    color: #cbd5e1;
+    font-size: 13px;
+}
