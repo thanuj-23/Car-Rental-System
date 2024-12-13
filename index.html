@@ -18,27 +18,27 @@ session_start();
 
     <!-- Header -->
     <header>
-        <a href="index.php" class="logo">
+        <a href="index.html" class="logo">
             <img src="images/logo.png" alt="Logo">
         </a>
         <ul id="mainmenu">
-            <li><a href="index.php" class="menu-item">Home</a></li>
-            <li><a href="cars.php" class="menu-item">Cars</a></li>
-            <li><a href="booking.php" class="menu-item">Booking</a></li>
+            <li><a href="index.html" class="menu-item">Home</a></li>
+            <li><a href="cars.html" class="menu-item">Cars</a></li>
+            <li><a href="booking.html" class="menu-item">Booking</a></li>
             <li class="dropdown">
                 <a href="#" class="menu-item">My Account</a>
                 <ul class="dropdown-content">
-                    <li><a href="myprofile.php" class="menu-item">My Profile</a></li>
-                    <li><a href="myorder.php" class="menu-item">My Orders</a></li>
-                    <li><a href="entercar.php" class="menu-item">Add New</a></li>
+                    <li><a href="myprofile.html" class="menu-item">My Profile</a></li>
+                    <li><a href="myorder.html" class="menu-item">My Orders</a></li>
+                    <li><a href="entercar.html" class="menu-item">Add New</a></li>
                 </ul>
             </li>
             <li class="dropdown">
                 <a href="#" class="menu-item">Pages</a>
                 <ul class="dropdown-content">
-                    <li><a href="about.php" class="menu-item">About Us</a></li>
-                    <li><a href="contactus.php" class="menu-item">Contact</a></li>
-                    <li><a href="contact.php" class="menu-item">Feedbacks</a></li>
+                    <li><a href="about.html" class="menu-item">About Us</a></li>
+                    <li><a href="contactus.html" class="menu-item">Contact</a></li>
+                    <li><a href="contact.html" class="menu-item">Feedbacks</a></li>
                 </ul>
             </li>
         </ul>
@@ -49,11 +49,11 @@ session_start();
         
             if (isset($_SESSION['login_customer']) || isset($_SESSION['login_client'])) {
       
-                echo '<a href="logout.php" class="register-btn">Logout</a>';
+                echo '<a href="logout.html" class="register-btn">Logout</a>';
             } else {
      
-                echo '<a href="customerlogin.php" class="sign-in-btn">Sign In</a>';
-                echo '<a href="customersignup.php" class="register-btn">Register</a>';
+                echo '<a href="customerlogin.html" class="sign-in-btn">Sign In</a>';
+                echo '<a href="customersignup.html" class="register-btn">Register</a>';
             }
             ?>
         </div>
@@ -74,7 +74,7 @@ session_start();
                 <h1>Explore the World with a Comfortable Car</h1>
                 <p>Embark on unforgettable adventures and discover the world in unparalleled comfort and style with our fleet of exceptionally comfortable cars.</p>
                 <div class="button-group">
-                    <a href="cars.php" class="btn choose-btn">Choose a Car</a>
+                    <a href="cars.html" class="btn choose-btn">Choose a Car</a>
                 </div>
             </div>
         </div>
@@ -139,11 +139,11 @@ session_start();
             <div class="col">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="cars.php">Cars</a></li>
-                    <li><a href="booking.php">Booking</a></li>
-                    <li><a href="about.php">About Us</a></li>
-                    <li><a href="contact.php">Contact Us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cars.html">Cars</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -170,7 +170,7 @@ session_start();
         </div>
         <div class="footer-bottom">
             <p>&copy; QuickWay 2024 - All Rights Reserved<br>
-                <a href="privacy.php" class="col">Privacy policy</a> | <a href="terms.php" class="col">Terms and Conditions</a>
+                <a href="privacy.html" class="col">Privacy policy</a> | <a href="terms.html" class="col">Terms and Conditions</a>
             </p>
         </div>
     </footer>
