@@ -1,0 +1,86 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.invoice {
+    border: 2px solid #3e8e41; 
+    border-radius: 10px;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #3e8e41; 
+    margin: 0;
+}
+
+header h2 {
+    color: #FF9800; 
+    margin: 0;
+}
+
+.order-number {
+    color: blue; 
+    font-weight: bold;
+}
+
+.details, .car-details, .booking-info {
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #3e8e41;
+    border-bottom: 1px solid #3e8e41;
+    padding-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #666;
+}
+
+
+.button-container {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px; 
+    background-color: #3e8e41; 
+    color: white; 
+    text-decoration: none; 
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.btn:hover {
+    background-color: #2e7031;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+

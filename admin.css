@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Form Section */
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%; /* Adjusted size to be larger */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.form-container::before {
+    content: '';
+    position: absolute;
+    left: -10px; /* Positioning the green line */
+    top: 0;
+    bottom: 0;
+    width: 5px; /* Width of the green line */
+    background-color: #28a745; /* Green color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #28a745; /* Green border for input */
+    border-radius: 5px;
+}
+
+form input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #28a745; /* Focused input with green shadow */
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Cars List Section */
+.cars-section {
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cars-section h2 {
+    text-align: center;
+}
+
+.cars-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cars-section table th, .cars-section table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.cars-section table th {
+    background-color: #f2f2f2;
+}
+
+.edit {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.delete {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.edit:hover, .delete:hover {
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+    }
+
+    form input, form button {
+        font-size: 1rem;
+    }
+
+    .cars-section table th, .cars-section table td {
+        font-size: 0.9rem;
+    }
+}
+
+
+/*update account----------------------------------------------------------------*/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark text color */
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Form section styles */
+.form-section {
+    background-color: #fff; /* White background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    color: #4CAF50; /* Green color for the header */
+    margin-bottom: 20px;
+}
+
+.edit-form-section {
+    background-color: #fff; /* White background for the form */
+    padding: 15px; /* Less padding for a more compact look */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Margin to separate from other sections */
+}
+
+.edit-form-section h2 {
+    color: #4CAF50; /* Green color for the header */
+    margin-bottom: 15px; /* Smaller margin for compactness */
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 10px; /* Reduced margin for form groups */
+}
+
+label {
+    display: block;
+    margin-bottom: 3px; /* Smaller margin for labels */
+    color: #555; /* Dark grey label color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px; /* Reduced padding for a compact look */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #4CAF50; /* Change border color to green on focus */
+    outline: none;
+}
+
+/* Button styles */
+button {
+    background-color: #4CAF50; /* Green button color */
+    color: white;
+    border: none;
+    padding: 8px 12px; /* Reduced padding for compact buttons */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; /* Smaller font size */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+/* Cars section styles */
+.cars-section {
+    margin-top: 30px;
+}
+
+.cars-section h2 {
+    color: #4CAF50; /* Green header color */
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #ddd; /* Light grey border for table cells */
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #4CAF50; /* Green background for table header */
+    color: rgb(0, 0, 0); /* White text color for table header */
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light grey for even rows */
+}
+
+table tr:hover {
+    background-color: #f1f1f1; /* Light grey background on hover */
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with transparency */
+}
+
+.modal-content {
+    background-color: #fff; /* White background for modal */
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 8px;
+    width: 80%; /* Width of the modal */
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close {
+    color: #aaa; /* Grey close button */
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Change color on hover */
+    text-decoration: none;
+    cursor: pointer;
+}

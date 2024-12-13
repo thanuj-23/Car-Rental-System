@@ -1,0 +1,213 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    flex-direction: column; /* So header stacks above the form */
+    margin: 0;
+}
+
+.header-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent header */
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-container {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.616), rgba(240, 240, 240, 0.9));
+    padding: 20px; /* Reduced padding for a smaller form */
+    border-radius: 15px; /* Slightly smaller radius */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    max-width: 350px; /* Reduced width */
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333; /* Darker color for the heading */
+    font-weight: 500; /* Slightly bolder for emphasis */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+label {
+    display: block;
+    text-align: left; /* Left-align labels for clarity */
+    margin-bottom: 5px;
+    color: #555; /* Lighter color for better readability */
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px; /* More padding for a comfortable feel */
+    margin: 10px 0;
+    display: inline-block;
+    border: 2px solid #ccc; /* Slightly thicker border for better visibility */
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus effect */
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Subtle green glow effect */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Larger font for the button */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.error {
+    color: red;
+}
+
+p {
+    margin-top: 20px;
+    color: #555; /* Lighter color for the text */
+}
+
+a {
+    color: #4CAF50; /* Green for the signup link */
+    text-decoration: none;
+    font-weight: bold; /* Bold for emphasis */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+/*HEADER OPEN
+===========================================================================================*/
+
+header
+{
+	position:fixed;
+	justify-content: space-between;
+	top:0;
+	display:flex;
+	align-items:center;
+	transition:0.6s;
+	padding:40px 100px;
+	z-index:100000;
+
+}
+
+
+
+.logo img {
+    height: 70px; /* Adjust the height as necessary */
+    width: auto;
+}
+/* General Styles from earlier remain the same */
+
+/* Navigation Menu */
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header ul li {
+    position: relative;
+    margin: 0 15px;
+    list-style: none;
+}
+
+header ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+header ul a:hover {
+    background-color: rgba(248, 248, 248, 0.5);
+	border-radius: 5px;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content li {
+    width: 100%;
+}
+
+.dropdown-content a {
+    padding: 12px 20px;
+    color: #333;
+    background-color: #fff;
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+header.sticky .logo,
+header.sticky ul li a{
+	color:#000;
+}
+
+
+.auth-buttons a {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+
+/*HEADER CLOSE
+===========================================================================================*/
